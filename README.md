@@ -131,7 +131,7 @@ This creates a directive that can be used like this:
 
 In an existing Angular application, you'll often have existing services or filters that you wish to access from your React component. These can be retrieved using Angular's dependency injection. The React component will still be render-able as aforementioned, using the react-component directive.
 
-```html
+```javascript
 app.filter('hero', function() {
   return function(person) {
     if (person.fname === 'Clark' && person.lname === 'Kent') {
@@ -148,7 +148,7 @@ app.factory('HelloComponent', function($filter) {
       person: React.PropTypes.object.isRequired,
     },
     render: function() {
-      return <span>Hello $filter('hero')(this.props.person)</span>;
+      return '<span>'Hello $filter('hero')(this.props.person)'</span>';
     }
   });
 });
