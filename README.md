@@ -69,14 +69,14 @@ angular.module('app', ['react'])
 
 And a React Component like this
 
-```html
+```javascript
 /** @jsx React.DOM */
   propTypes: {
     fname : React.PropTypes.string.isRequired,
     lname : React.PropTypes.string.isRequired
   },
   render: function() {
-    return <span>Hello {this.props.fname} {this.props.lname}</span>;
+    return '<span>'Hello {this.props.fname} {this.props.lname}'</span>';
   }
 })
 app.value('HelloComponent', HelloComponent);
