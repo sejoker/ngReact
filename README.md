@@ -76,7 +76,7 @@ And a React Component like this
     lname : React.PropTypes.string.isRequired
   },
   render: function() {
-    return '<span>'Hello {this.props.fname} {this.props.lname}'</span>';
+    return `<span>`Hello {this.props.fname} {this.props.lname}`</span>`;
   }
 })
 app.value('HelloComponent', HelloComponent);
