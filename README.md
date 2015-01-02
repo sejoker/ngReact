@@ -69,7 +69,7 @@ angular.module('app', ['react'])
 
 And a React Component like this
 
-```javascript
+```html
 /** @jsx React.DOM */
   propTypes: {
     fname : React.PropTypes.string.isRequired,
